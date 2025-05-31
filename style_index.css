@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color:aliceblue;
+    font-family: "Karla", sans-serif;
+}
+
+nav {
+    margin: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.img_logo_text {
+    width: 15rem;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;    
+}
+
+.links {
+    display: flex;
+    align-items: center;
+
+}
+
+.links > ul > li > a {
+    color: green
+}
+.links > ul > li > a:hover {
+    color: black;
+    transition: 0.3s all;
+}
+
+.links > li {
+    margin: 0 1rem 0 1rem;
+}
+
+.links_4 {
+    display: flex;
+}
+
+.links_4 > li {
+    margin: 0 1rem 0 1rem;
+}
+.login_nav > li > a {
+    color: green
+}
+
+.login_nav > li > a:hover {
+    color: black;
+    transition: 0.3s all;
+    font-weight: 700;
+    outline: solid 1px green;
+    padding: 0.5rem;
+}
+
+.main_section {
+    color: green;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20vh;
+}
+.main_section > div > p {
+    margin: 2rem auto 2rem auto;
+    line-height: 2rem;
+}
+.main_section > div > li > a {
+    background-color:green;
+    color: white;
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 1px;
+    font-weight: 600;
+}
+
+#burger {
+    cursor: pointer;
+}
+
+footer > div > ul > img {
+    width: 10rem;
+
+}
+
+footer > div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 2rem 0 2rem 0;
+}
+
+
+.links_footer {
+    display: flex;
+    gap: 5rem;
+    flex-wrap: wrap;
+}
+
+.links_footer > ul > li {
+    margin: 1rem;
+    color: green;
+}
+
+.links_footer > ul > li > a {
+    color: green;
+    font-weight: 700;
+}
+
+
+@media screen and (min-width: 1024px) {
+    #burguer {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .login_nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .links_4 {
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: fit-content;
+        margin: 7rem auto auto auto;
+    }
+}
+
+@media screen and (max-width: 775px) {
+    .main_section > div > h1 {
+        font-size: 2rem;
+        width: 20rem;
+        line-height: 2rem;
+        word-spacing: 0.1rem;
+    }
+
+    .main_section > div > p {
+        font-size: 1rem;
+        width: 100%;
+        padding: 2rem auto 2rem auto;
+        line-height: 1.5rem;
+    }
+}
